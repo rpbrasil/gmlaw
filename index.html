@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<title>G.M Advogados</title>
 	<link rel="icon" type="image/x-icon" href="/images/icons/favicon.ico">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="robots" content="noodp" />
 	<link
 		href='https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i%7CCrimson+Text:400,400i,700,700i'
@@ -267,7 +267,7 @@
 				<div class="row">
 					<div class="col-lg-8 offset-lg-2">
 						<div class="intro-msg margin-b58">
-							<div class="intro-normal">Bem-vindo ao GM Advogados</div>
+							<div class="intro-normal">GM Advogados</div>
 							<div class="intro-2"><span class="intro-big-italic"></span> <span
 									class="intro-small-italic">Compromisso, Experiência e Resultados</span></div>
 							<div class="intro-year"></div>
@@ -461,7 +461,7 @@
 				<div class="row" style="display:block;">
 					<div class="col-lg-6 col-md-6 col-sm-10">
 					</div>
-					<div class="col-lg-6 col-md-4" style="margin-top:30px;margin-bottom:30px;float:right;">
+					<div class="topBanner col-lg-6 col-md-4" style="margin-top:30px;margin-bottom:30px;float:right;">
 						<div class="lawyer-excerpt" style="padding-top: 70px;padding-left:30px;padding-right:15px;padding-bottom:30px; 
 						color: white;  background-color: #868883a8;margin-left: auto; margin-right: 0;">
 							<p>Formado em Direito pela Pontifícia Universidade Católica de São Paulo em 2017,
@@ -823,6 +823,37 @@
 	<!-- CONTAT FORM JS -->
 	<script src='/js/jquery.form.min.js'></script>
 	<script src='/js/contactform.js'></script>
+
+	<!-- IS MOBILE -->
+	<script>
+		function isMobile() {
+			if (
+				navigator.userAgent.match(/Android/i) ||
+				navigator.userAgent.match(/webOS/i) ||
+				navigator.userAgent.match(/iPhone/i) ||
+				navigator.userAgent.match(/iPad/i) ||
+				navigator.userAgent.match(/iPod/i) ||
+				navigator.userAgent.match(/BlackBerry/i) ||
+				navigator.userAgent.match(/Windows Phone/i)
+			) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+	</script>
+	<!-- AJUSTES DE UI MOBILE -->
+	<script>
+		if (isMobile()) {
+			$(".intro-normal").css("font-size", "45px");
+			$(".intro-small-italic").css("font-size", "25px");
+			$("div.lawyer-excerpt p").css("font-size", "75%");
+			$("div.lawyer-excerpt").css("padding-top", "26px");
+			$(".topBanner").css("top", "300px");
+			$("html").css("margin", "0").css("padding", "0").css("width", "100%").css("height", "100%");
+			$("body").css("margin", "0").css("padding", "0").css("width", "100%").css("height", "100%");
+		}
+	</script>
 </body>
 
 </html>

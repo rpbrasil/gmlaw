@@ -24,11 +24,22 @@
 	<link rel="apple-touch-icon-precomposed" href="images/icons/favicon-180x180.png" />
 
 	<style>
-		@media (min-width:290px) {
-			row {
-				margin-right: 0px;
-				margin-left: 0px;
-			}
+		body {
+			overflow-y: scroll;
+			scrollbar-width: thin;
+			scrollbar-gutter: auto;
+			/*| stable && both-edges? */
+			-ms-overflow-style: none;
+		}
+
+		body::-webkit-scrollbar {
+			width: 6px;
+			/* Largura da barra de rolagem - Chrome, Safari, Opera */
+		}
+
+		body::-webkit-scrollbar-thumb {
+			background-color: #888;
+			/* Cor do "ponteiro" da barra de rolagem */
 		}
 	</style>
 </head>
@@ -41,7 +52,7 @@
 			<ul>
 				<!-- <li><i class="fa fa-map-marker"></i><span>40 Park Ave, Brooklyn, New York</span></li> -->
 				<li><i class="fa fa-mobile"></i><a
-						href="https://wa.me/+5511951493744?text=Tenho%20interesse%20em%20uma%20consulta"
+						href="https://wa.me/+5511951493744?text=Ola.%20Tenho%20interesse%20em%20uma%20consulta"
 						style="color:#ffffff;">11-951493744</a></li>
 				<li><i class="fa fa-envelope"></i><a href="mailto:g.massuquini@outlook.com">g.massuquini@outlook.com</a>
 				</li>
@@ -150,7 +161,7 @@
 				<div class="slider-caption">
 					<div class="slider-text">
 						<h2>Bem vindo<br>ao nosso escritório</h2>
-						<h4>Conheça nossas áreas de atuação</h4>
+						<h4>Conheça as áreas de atuação</h4>
 						<a class="btn-white" href="#areas">Saiba Mais</a>
 					</div>
 				</div>
@@ -225,7 +236,7 @@
 		<!-- /SECTION 2-->
 		<!-- SECTION 3-->
 		<section class="section-holder">
-			<div class="container" id="areas" style="scroll-margin: 80px 0 0 80px;">
+			<div class="container" id="areas" style="scroll-margin: 80px 0 0 0px;">
 				<div class="row">
 					<div class="col-lg-8 offset-lg-2 alignc">
 						<span class="heading-subtitle">Assistência jurídica</span>
@@ -360,7 +371,7 @@
 		</section>
 		<!-- /SECTION 4-->
 		<!-- SECTION 5-->
-		<div class="row" id="profissional" style="scroll-margin: 80px 0 0 80px;">
+		<div class="row" id="profissional" style="scroll-margin: 80px 0 0 0px;">
 			<div class="col-lg-8 offset-lg-2 alignc">
 				<span class="heading-subtitle">O profissional</span>
 				<h2 class="section-heading-title">Gustavo Massuquini</h2>
@@ -458,7 +469,7 @@
 		<!-- SECTION 7-->
 		<section class="section-holder midia">
 			<div class="container">
-				<div class="row" id="midia" style="scroll-margin: 80px 0 0 80px;">
+				<div class="row" id="midia" style="scroll-margin: 80px 0 0 0px;">
 					<div class="col-lg-8 offset-lg-2 alignc">
 						<span class="heading-subtitle">Em tempo real</span>
 						<h2 class="section-heading-title">Noticías do Brasil</h2>
@@ -569,7 +580,7 @@
 		</section>
 		<!-- /SECTION 8-->
 		<!-- SECTION 9-->
-		<section id="contact" class="section-holder" style="scroll-margin: 80px 0 0 80px;">
+		<section id="contact" class="section-holder" style="scroll-margin: 80px 0 0 0px;">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 margin-bm54">

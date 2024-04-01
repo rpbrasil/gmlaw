@@ -78,7 +78,7 @@
 			<div class="header-wrap header-wrap1">
 				<div class="logo logo-1"><a href="index.html"><img class="img-fluid" src="images/GmLOGO.png"
 							alt="logo"></a>
-						<div id="emailContact" class="header-info" style="float:left;display:none;"><span class="info-circle"><i class="fa fa-envelope"></i></span>g.massuquini@outlook.com
+						<div id="emailContact" class="header-info" style="float:left;display:none;"><span class="info-circle"><i class="fa fa-envelope"></i></span><a style="color:#ffffff;" href="mailto:g.massuquini@outlook.com">g.massuquini@outlook.com</a>
 							<div id="wsappContact" class="header-info" style="display:none;float: right;font-size: initial;padding-left:4px;"><span class="info-circle"><svg
 									xmlns="http://www.w3.org/2000/svg" height="18" width="16"
 									viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
@@ -621,7 +621,7 @@
 							<div class="icon-box-icon"><i class="fas fa-envelope"></i></div>
 							<div class="icon-box-content">
 								<div class="icon-box-title">EMAIL</div>
-								<p class="icon-box-description"><a
+								<p id="emailDesc" class="icon-box-description"><a
 										href="mailto:g.massuquini@outlook.com">g.massuquini@outlook.com</a></p>
 							</div>
 						</div>
@@ -777,6 +777,7 @@
 	<!-- AJUSTES DE UI MOBILE -->
 	<script>
 		if (isMobile()) {
+			$("#emailDesc").css("font-size","20px");
 			$("#wsappContact").css("display", "block");
 			$("#emailContact").css("display", "block");
 			$(".intro-normal").css("font-size", "30px");
